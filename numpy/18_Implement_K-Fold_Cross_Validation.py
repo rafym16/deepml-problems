@@ -25,8 +25,3 @@ def k_fold_cross_validation(X: np.ndarray, y: np.ndarray, k=5, shuffle=True):
         splits.append((X_train, X_test))
 
     return splits
-
-    pass
-
-result = k_fold_cross_validation(np.array([0,1,2,3,4,5,6,7,8,9]), np.array([0,1,2,3,4,5,6,7,8,9]), k=5, shuffle=True)
-print(result)

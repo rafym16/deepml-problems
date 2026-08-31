@@ -40,5 +40,3 @@ def pca(data: np.ndarray, k: int):
 
     projected_data = np.dot(standardized_data, principal_components)
     return np.round(principal_components, 4)
-
-    pass

@@ -1,4 +1,5 @@
 import numpy as np
+
 def precision(y_true, y_pred):
 	# Your code here
     true_pos_value = 0
@@ -16,5 +17,5 @@ def precision(y_true, y_pred):
         else:
             true_neg_value += 1
 
-    precision_score = true_pos_value / (true_pos_value + false_pos_value)
+    precision_score = true_pos_value / (true_pos_value + false_neg_value)
     return precision_score
